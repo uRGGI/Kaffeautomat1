@@ -1,0 +1,10 @@
+C:\Users\Tobi\source\repos\Kaffeautomat\Kaffeautomat\bin\Debug\Kaffeautomat.exe.config
+C:\Users\Tobi\source\repos\Kaffeautomat\Kaffeautomat\bin\Debug\Kaffeautomat.exe
+C:\Users\Tobi\source\repos\Kaffeautomat\Kaffeautomat\bin\Debug\Kaffeautomat.pdb
+C:\Users\Tobi\source\repos\Kaffeautomat\Kaffeautomat\obj\Debug\Kaffeautomat.csprojResolveAssemblyReference.cache
+C:\Users\Tobi\source\repos\Kaffeautomat\Kaffeautomat\obj\Debug\Kaffeautomat.Form1.resources
+C:\Users\Tobi\source\repos\Kaffeautomat\Kaffeautomat\obj\Debug\Kaffeautomat.Properties.Resources.resources
+C:\Users\Tobi\source\repos\Kaffeautomat\Kaffeautomat\obj\Debug\Kaffeautomat.csproj.GenerateResource.Cache
+C:\Users\Tobi\source\repos\Kaffeautomat\Kaffeautomat\obj\Debug\Kaffeautomat.csproj.CoreCompileInputs.cache
+C:\Users\Tobi\source\repos\Kaffeautomat\Kaffeautomat\obj\Debug\Kaffeautomat.exe
+C:\Users\Tobi\source\repos\Kaffeautomat\Kaffeautomat\obj\Debug\Kaffeautomat.pdb
