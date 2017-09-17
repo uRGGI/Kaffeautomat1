@@ -8,7 +8,7 @@ namespace Kaffeautomat
 {
     public static class Payment
     {
-        public static List<IDrink> drinks = new List<IDrink>();
+        
 
         public static double Sum
         {
@@ -24,7 +24,7 @@ namespace Kaffeautomat
         public static double SumOfDrinks()
         {
             double sum = 0;
-            foreach (var drink in drinks)
+            foreach (var drink in Drinks.drinklist)
             {
                 sum += drink.Price;
             }

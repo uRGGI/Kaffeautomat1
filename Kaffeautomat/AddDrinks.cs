@@ -14,29 +14,29 @@ namespace Kaffeautomat
             Drinks.drinklist.Add(new CocaCola(10));
         }
 
-        public static Fanta AddFanta()
+        public static void AddFanta()
         {
-            return new Fanta(10);
+            Drinks.drinklist.Add(new Fanta(10));
         }
 
-        public static Sprite AddSprite()
+        public static void AddSprite()
         {
-            return new Sprite(10);
+            Drinks.drinklist.Add(new Sprite(10));
         }
 
-        public static Juice AddJuice()
+        public static void AddJuice()
         {
-            return new Juice(15);
+            Drinks.drinklist.Add(new Juice(15));
         }
 
-        public static Vatten AddWater()
+        public static void AddWater()
         {
-            return new Vatten(5);
+            Drinks.drinklist.Add(new Vatten(5));
         }
 
-        public static Kaffe AddCoffe()
+        public static void AddCoffe()
         {
-            return new Kaffe(8);
+            Drinks.drinklist.Add(new Kaffe(8));
         }
     }
 }

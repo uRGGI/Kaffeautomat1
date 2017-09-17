@@ -40,48 +40,42 @@ namespace Kaffeautomat
 
         private void btnCoke_Click(object sender, EventArgs e)
         {
-            var coke = AddDrinks.AddCola();
-            Payment.drinks.Add(coke);
+            AddDrinks.AddCola();
             AmountToPay();
             UpdateChange();
         }
 
         private void btnFanta_Click(object sender, EventArgs e)
         {
-            var fanta = AddDrinks.AddCola();
-            Payment.drinks.Add(fanta);
+            AddDrinks.AddFanta();
             AmountToPay();
             UpdateChange();
         }
 
         private void btnSprite_Click(object sender, EventArgs e)
         {
-            var sprite = AddDrinks.AddSprite();
-            Payment.drinks.Add(sprite);
+            AddDrinks.AddSprite();
             AmountToPay();
             UpdateChange();
         }
 
         private void btnKaffe_Click(object sender, EventArgs e)
         {
-            var coffee = AddDrinks.AddCoffe();
-            Payment.drinks.Add(coffee);
+            AddDrinks.AddCoffe();
             AmountToPay();
             UpdateChange();
         }
 
         private void btnJuice_Click(object sender, EventArgs e)
         {
-            var juice = AddDrinks.AddJuice();
-            Payment.drinks.Add(juice);
+            AddDrinks.AddJuice();
             AmountToPay();
             UpdateChange();
         }
 
         private void btnVatten_Click(object sender, EventArgs e)
         {
-            var water = AddDrinks.AddWater();
-            Payment.drinks.Add(water);
+            AddDrinks.AddWater();
             AmountToPay();
             UpdateChange();
         }

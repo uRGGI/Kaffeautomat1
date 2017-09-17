@@ -7,3 +7,12 @@ C:\Users\Tobi\source\repos\Kaffeautomat\Kaffeautomat\obj\Debug\Dryckmaskin.cspro
 C:\Users\Tobi\source\repos\Kaffeautomat\Kaffeautomat\obj\Debug\Dryckmaskin.csproj.CoreCompileInputs.cache
 C:\Users\Tobi\source\repos\Kaffeautomat\Kaffeautomat\obj\Debug\Kaffeautomat.exe
 C:\Users\Tobi\source\repos\Kaffeautomat\Kaffeautomat\obj\Debug\Kaffeautomat.pdb
+C:\Users\Tobi\Source\Repos\Kaffeautomat12\Kaffeautomat\obj\Debug\Kaffeautomat.Form1.resources
+C:\Users\Tobi\Source\Repos\Kaffeautomat12\Kaffeautomat\obj\Debug\Kaffeautomat.Properties.Resources.resources
+C:\Users\Tobi\Source\Repos\Kaffeautomat12\Kaffeautomat\obj\Debug\Dryckmaskin.csproj.GenerateResource.Cache
+C:\Users\Tobi\Source\Repos\Kaffeautomat12\Kaffeautomat\obj\Debug\Dryckmaskin.csproj.CoreCompileInputs.cache
+C:\Users\Tobi\Source\Repos\Kaffeautomat12\Kaffeautomat\obj\Debug\Kaffeautomat.exe
+C:\Users\Tobi\Source\Repos\Kaffeautomat12\Kaffeautomat\obj\Debug\Kaffeautomat.pdb
+C:\Users\Tobi\Source\Repos\Kaffeautomat12\Kaffeautomat\bin\Debug\Kaffeautomat.exe.config
+C:\Users\Tobi\Source\Repos\Kaffeautomat12\Kaffeautomat\bin\Debug\Kaffeautomat.exe
+C:\Users\Tobi\Source\Repos\Kaffeautomat12\Kaffeautomat\bin\Debug\Kaffeautomat.pdb
