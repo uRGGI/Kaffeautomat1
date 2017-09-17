@@ -14,7 +14,7 @@ namespace Kaffeautomat
 
         public Drinks()
         {
-
+            
         }
 
         public Drinks(int price)

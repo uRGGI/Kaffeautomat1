@@ -29,13 +29,15 @@ namespace Kaffeautomat
 
         public void AmountToPay()
         {
-            lblAmountPay.Text = Payment.SumOfDrinks().ToString();
+            lblTotalCost.Text = Payment.SumOfDrinks().ToString();
+            lblPayAmount.Text = Payment.AmountToPay().ToString();
         }
 
         public void UpdateChange()
         {
             lblChange.Text = Payment.CalcChange().ToString();
             lblPaid.Text = Payment.AmountPaid.ToString();
+            lblPayAmount.Text = Payment.AmountToPay().ToString();
         }
 
         private void btnCoke_Click(object sender, EventArgs e)

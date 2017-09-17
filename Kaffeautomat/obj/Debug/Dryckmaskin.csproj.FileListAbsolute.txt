@@ -16,3 +16,4 @@ C:\Users\Tobi\Source\Repos\Kaffeautomat12\Kaffeautomat\obj\Debug\Kaffeautomat.pd
 C:\Users\Tobi\Source\Repos\Kaffeautomat12\Kaffeautomat\bin\Debug\Kaffeautomat.exe.config
 C:\Users\Tobi\Source\Repos\Kaffeautomat12\Kaffeautomat\bin\Debug\Kaffeautomat.exe
 C:\Users\Tobi\Source\Repos\Kaffeautomat12\Kaffeautomat\bin\Debug\Kaffeautomat.pdb
+C:\Users\Tobi\Source\Repos\Kaffeautomat12\Kaffeautomat\obj\Debug\Dryckmaskin.csprojResolveAssemblyReference.cache

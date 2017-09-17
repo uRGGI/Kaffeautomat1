@@ -42,5 +42,16 @@ namespace Kaffeautomat
 
             return Change;
         }
+
+        public static double AmountToPay()
+        {
+            if (Sum - AmountPaid < 0)
+            {
+                return 0;
+            }
+            return Sum - AmountPaid;
+            
+            
+        }
     }
 }
