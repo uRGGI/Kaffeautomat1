@@ -40,6 +40,17 @@ namespace Kaffeautomat
             lblChange.Text = payment.CalcChange().ToString();
             lblPaid.Text = payment.AmountPaid.ToString();
             lblPayAmount.Text = payment.AmountToPay().ToString();
+            FillLabelsWithInfo();
+        }
+
+        public void FillLabelsWithInfo()
+        {
+            lblCokeAmount.Text = drinkvendor.AmountOfDrink(DrinkType.Coke).ToString();
+            lblFantaAmount.Text = drinkvendor.AmountOfDrink(DrinkType.Fanta).ToString();
+            lblSpriteAmount.Text = drinkvendor.AmountOfDrink(DrinkType.Sprite).ToString();
+            lblKaffeAmount.Text = drinkvendor.AmountOfDrink(DrinkType.Kaffe).ToString();
+            lblJuiceAmount.Text = drinkvendor.AmountOfDrink(DrinkType.Juice).ToString();
+            lblVattenAmount.Text = drinkvendor.AmountOfDrink(DrinkType.Vatten).ToString();
         }
 
         private void btnCoke_Click(object sender, EventArgs e)
@@ -122,12 +133,61 @@ namespace Kaffeautomat
         private void button2_Click(object sender, EventArgs e)
         {
             drinkvendor.RemoveDrink(DrinkType.Coke);
-            lblCokeAmount.Text = drinkvendor.AmountOfDrink(DrinkType.Coke).ToString();
+            UpdateChange();
+            AmountToPay();
         }
 
         private void lblCokeAmount_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRemoveFanta_Click(object sender, EventArgs e)
+        {
+            drinkvendor.RemoveDrink(DrinkType.Fanta);
+            UpdateChange();
+            AmountToPay();
+        }
+
+        private void btnRemoveSprite_Click(object sender, EventArgs e)
+        {
+            drinkvendor.RemoveDrink(DrinkType.Sprite);
+            UpdateChange();
+            AmountToPay();
+        }
+
+        private void btnRemoveKaffe_Click(object sender, EventArgs e)
+        {
+            drinkvendor.RemoveDrink(DrinkType.Kaffe);
+            UpdateChange();
+            AmountToPay();
+        }
+
+        private void btnRemoveJuice_Click(object sender, EventArgs e)
+        {
+            drinkvendor.RemoveDrink(DrinkType.Juice);
+            UpdateChange();
+            AmountToPay();
+        }
+
+        private void btnRemoveVatten_Click(object sender, EventArgs e)
+        {
+            drinkvendor.RemoveDrink(DrinkType.Vatten);
+            UpdateChange();
+            AmountToPay();
+        }
+
+        private void resetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Drinkvendor.drinklist.Clear();
+            payment.ClearAll();
+            UpdateChange();
+            AmountToPay();
         }
     }
 }

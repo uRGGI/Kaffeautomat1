@@ -37,11 +37,11 @@
             this.lblPay1 = new System.Windows.Forms.Label();
             this.lblPay50c = new System.Windows.Forms.Label();
             this.gbDrinks = new System.Windows.Forms.GroupBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnRemoveVatten = new System.Windows.Forms.Button();
+            this.btnRemoveJuice = new System.Windows.Forms.Button();
+            this.btnRemoveKaffe = new System.Windows.Forms.Button();
+            this.btnRemoveFanta = new System.Windows.Forms.Button();
+            this.btnRemoveSprite = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -71,20 +71,25 @@
             this.lblPaid = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lblVattenAmount = new System.Windows.Forms.Label();
+            this.lblJuiceAmount = new System.Windows.Forms.Label();
+            this.lblKaffeAmount = new System.Windows.Forms.Label();
+            this.lblSpriteAmount = new System.Windows.Forms.Label();
+            this.lblFantaAmount = new System.Windows.Forms.Label();
             this.lblCokeAmount = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gbDrinks.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn10
@@ -173,11 +178,11 @@
             // 
             // gbDrinks
             // 
-            this.gbDrinks.Controls.Add(this.button12);
-            this.gbDrinks.Controls.Add(this.button11);
-            this.gbDrinks.Controls.Add(this.button10);
-            this.gbDrinks.Controls.Add(this.button9);
-            this.gbDrinks.Controls.Add(this.button8);
+            this.gbDrinks.Controls.Add(this.btnRemoveVatten);
+            this.gbDrinks.Controls.Add(this.btnRemoveJuice);
+            this.gbDrinks.Controls.Add(this.btnRemoveKaffe);
+            this.gbDrinks.Controls.Add(this.btnRemoveFanta);
+            this.gbDrinks.Controls.Add(this.btnRemoveSprite);
             this.gbDrinks.Controls.Add(this.button7);
             this.gbDrinks.Controls.Add(this.button6);
             this.gbDrinks.Controls.Add(this.button5);
@@ -209,50 +214,55 @@
             this.gbDrinks.TabStop = false;
             this.gbDrinks.Text = "Drycker";
             // 
-            // button12
+            // btnRemoveVatten
             // 
-            this.button12.Location = new System.Drawing.Point(205, 187);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(23, 23);
-            this.button12.TabIndex = 27;
-            this.button12.Text = "-";
-            this.button12.UseVisualStyleBackColor = true;
+            this.btnRemoveVatten.Location = new System.Drawing.Point(205, 187);
+            this.btnRemoveVatten.Name = "btnRemoveVatten";
+            this.btnRemoveVatten.Size = new System.Drawing.Size(23, 23);
+            this.btnRemoveVatten.TabIndex = 27;
+            this.btnRemoveVatten.Text = "-";
+            this.btnRemoveVatten.UseVisualStyleBackColor = true;
+            this.btnRemoveVatten.Click += new System.EventHandler(this.btnRemoveVatten_Click);
             // 
-            // button11
+            // btnRemoveJuice
             // 
-            this.button11.Location = new System.Drawing.Point(205, 158);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(23, 23);
-            this.button11.TabIndex = 26;
-            this.button11.Text = "-";
-            this.button11.UseVisualStyleBackColor = true;
+            this.btnRemoveJuice.Location = new System.Drawing.Point(205, 158);
+            this.btnRemoveJuice.Name = "btnRemoveJuice";
+            this.btnRemoveJuice.Size = new System.Drawing.Size(23, 23);
+            this.btnRemoveJuice.TabIndex = 26;
+            this.btnRemoveJuice.Text = "-";
+            this.btnRemoveJuice.UseVisualStyleBackColor = true;
+            this.btnRemoveJuice.Click += new System.EventHandler(this.btnRemoveJuice_Click);
             // 
-            // button10
+            // btnRemoveKaffe
             // 
-            this.button10.Location = new System.Drawing.Point(205, 129);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(23, 23);
-            this.button10.TabIndex = 25;
-            this.button10.Text = "-";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btnRemoveKaffe.Location = new System.Drawing.Point(205, 129);
+            this.btnRemoveKaffe.Name = "btnRemoveKaffe";
+            this.btnRemoveKaffe.Size = new System.Drawing.Size(23, 23);
+            this.btnRemoveKaffe.TabIndex = 25;
+            this.btnRemoveKaffe.Text = "-";
+            this.btnRemoveKaffe.UseVisualStyleBackColor = true;
+            this.btnRemoveKaffe.Click += new System.EventHandler(this.btnRemoveKaffe_Click);
             // 
-            // button9
+            // btnRemoveFanta
             // 
-            this.button9.Location = new System.Drawing.Point(205, 71);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(23, 23);
-            this.button9.TabIndex = 24;
-            this.button9.Text = "-";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnRemoveFanta.Location = new System.Drawing.Point(205, 71);
+            this.btnRemoveFanta.Name = "btnRemoveFanta";
+            this.btnRemoveFanta.Size = new System.Drawing.Size(23, 23);
+            this.btnRemoveFanta.TabIndex = 24;
+            this.btnRemoveFanta.Text = "-";
+            this.btnRemoveFanta.UseVisualStyleBackColor = true;
+            this.btnRemoveFanta.Click += new System.EventHandler(this.btnRemoveFanta_Click);
             // 
-            // button8
+            // btnRemoveSprite
             // 
-            this.button8.Location = new System.Drawing.Point(205, 100);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(23, 23);
-            this.button8.TabIndex = 23;
-            this.button8.Text = "-";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnRemoveSprite.Location = new System.Drawing.Point(205, 100);
+            this.btnRemoveSprite.Name = "btnRemoveSprite";
+            this.btnRemoveSprite.Size = new System.Drawing.Size(23, 23);
+            this.btnRemoveSprite.TabIndex = 23;
+            this.btnRemoveSprite.Text = "-";
+            this.btnRemoveSprite.UseVisualStyleBackColor = true;
+            this.btnRemoveSprite.Click += new System.EventHandler(this.btnRemoveSprite_Click);
             // 
             // button7
             // 
@@ -546,11 +556,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.label21);
-            this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.label19);
-            this.groupBox1.Controls.Add(this.label18);
+            this.groupBox1.Controls.Add(this.lblVattenAmount);
+            this.groupBox1.Controls.Add(this.lblJuiceAmount);
+            this.groupBox1.Controls.Add(this.lblKaffeAmount);
+            this.groupBox1.Controls.Add(this.lblSpriteAmount);
+            this.groupBox1.Controls.Add(this.lblFantaAmount);
             this.groupBox1.Controls.Add(this.lblCokeAmount);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.label15);
@@ -566,59 +576,56 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Du köper:";
             // 
-            // label11
+            // lblVattenAmount
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(5, 33);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(98, 19);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Coca Cola: ";
+            this.lblVattenAmount.AutoSize = true;
+            this.lblVattenAmount.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblVattenAmount.Location = new System.Drawing.Point(101, 171);
+            this.lblVattenAmount.Name = "lblVattenAmount";
+            this.lblVattenAmount.Size = new System.Drawing.Size(18, 19);
+            this.lblVattenAmount.TabIndex = 21;
+            this.lblVattenAmount.Text = "0";
             // 
-            // label12
+            // lblJuiceAmount
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(5, 61);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(58, 19);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Fanta:";
+            this.lblJuiceAmount.AutoSize = true;
+            this.lblJuiceAmount.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblJuiceAmount.Location = new System.Drawing.Point(101, 139);
+            this.lblJuiceAmount.Name = "lblJuiceAmount";
+            this.lblJuiceAmount.Size = new System.Drawing.Size(18, 19);
+            this.lblJuiceAmount.TabIndex = 20;
+            this.lblJuiceAmount.Text = "0";
             // 
-            // label13
+            // lblKaffeAmount
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(5, 87);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(64, 19);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "Sprite: ";
+            this.lblKaffeAmount.AutoSize = true;
+            this.lblKaffeAmount.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblKaffeAmount.Location = new System.Drawing.Point(101, 111);
+            this.lblKaffeAmount.Name = "lblKaffeAmount";
+            this.lblKaffeAmount.Size = new System.Drawing.Size(18, 19);
+            this.lblKaffeAmount.TabIndex = 19;
+            this.lblKaffeAmount.Text = "0";
             // 
-            // label14
+            // lblSpriteAmount
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(5, 111);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(55, 19);
-            this.label14.TabIndex = 16;
-            this.label14.Text = "Kaffe:";
+            this.lblSpriteAmount.AutoSize = true;
+            this.lblSpriteAmount.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblSpriteAmount.Location = new System.Drawing.Point(102, 87);
+            this.lblSpriteAmount.Name = "lblSpriteAmount";
+            this.lblSpriteAmount.Size = new System.Drawing.Size(18, 19);
+            this.lblSpriteAmount.TabIndex = 18;
+            this.lblSpriteAmount.Text = "0";
             // 
-            // label15
+            // lblFantaAmount
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(5, 139);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(56, 19);
-            this.label15.TabIndex = 16;
-            this.label15.Text = "Juice:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(5, 171);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(58, 19);
-            this.label16.TabIndex = 16;
-            this.label16.Text = "Fanta:";
+            this.lblFantaAmount.AutoSize = true;
+            this.lblFantaAmount.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblFantaAmount.Location = new System.Drawing.Point(102, 61);
+            this.lblFantaAmount.Name = "lblFantaAmount";
+            this.lblFantaAmount.Size = new System.Drawing.Size(18, 19);
+            this.lblFantaAmount.TabIndex = 18;
+            this.lblFantaAmount.Text = "0";
+            this.lblFantaAmount.Click += new System.EventHandler(this.label18_Click);
             // 
             // lblCokeAmount
             // 
@@ -631,55 +638,90 @@
             this.lblCokeAmount.Text = "0";
             this.lblCokeAmount.Click += new System.EventHandler(this.lblCokeAmount_Click);
             // 
-            // label18
+            // label16
             // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label18.Location = new System.Drawing.Point(102, 61);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(18, 19);
-            this.label18.TabIndex = 18;
-            this.label18.Text = "0";
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(5, 171);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(63, 19);
+            this.label16.TabIndex = 16;
+            this.label16.Text = "Vatten:";
             // 
-            // label19
+            // label15
             // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label19.Location = new System.Drawing.Point(102, 87);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(18, 19);
-            this.label19.TabIndex = 18;
-            this.label19.Text = "0";
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(5, 139);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(56, 19);
+            this.label15.TabIndex = 16;
+            this.label15.Text = "Juice:";
             // 
-            // label20
+            // label14
             // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label20.Location = new System.Drawing.Point(101, 111);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(18, 19);
-            this.label20.TabIndex = 19;
-            this.label20.Text = "0";
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(5, 111);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(55, 19);
+            this.label14.TabIndex = 16;
+            this.label14.Text = "Kaffe:";
             // 
-            // label21
+            // label13
             // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label21.Location = new System.Drawing.Point(101, 139);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(18, 19);
-            this.label21.TabIndex = 20;
-            this.label21.Text = "0";
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(5, 87);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(64, 19);
+            this.label13.TabIndex = 2;
+            this.label13.Text = "Sprite: ";
             // 
-            // label22
+            // label12
             // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label22.Location = new System.Drawing.Point(101, 171);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(18, 19);
-            this.label22.TabIndex = 21;
-            this.label22.Text = "0";
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(5, 61);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(58, 19);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Fanta:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(5, 33);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(98, 19);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Coca Cola: ";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.resetToolStripMenuItem,
+            this.quitToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(667, 24);
+            this.menuStrip1.TabIndex = 16;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // resetToolStripMenuItem
+            // 
+            this.resetToolStripMenuItem.Name = "resetToolStripMenuItem";
+            this.resetToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.resetToolStripMenuItem.Text = "Reset";
+            this.resetToolStripMenuItem.Click += new System.EventHandler(this.resetToolStripMenuItem_Click);
+            // 
+            // quitToolStripMenuItem
+            // 
+            this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
+            this.quitToolStripMenuItem.Text = "Quit";
             // 
             // Form1
             // 
@@ -701,6 +743,8 @@
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.btn5);
             this.Controls.Add(this.btn10);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Dryckautomat";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -708,6 +752,8 @@
             this.gbDrinks.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -745,11 +791,11 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblPayAmount;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnRemoveVatten;
+        private System.Windows.Forms.Button btnRemoveJuice;
+        private System.Windows.Forms.Button btnRemoveKaffe;
+        private System.Windows.Forms.Button btnRemoveFanta;
+        private System.Windows.Forms.Button btnRemoveSprite;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
@@ -758,11 +804,11 @@
         private System.Windows.Forms.Button btnRemoveCoke;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblVattenAmount;
+        private System.Windows.Forms.Label lblJuiceAmount;
+        private System.Windows.Forms.Label lblKaffeAmount;
+        private System.Windows.Forms.Label lblSpriteAmount;
+        private System.Windows.Forms.Label lblFantaAmount;
         private System.Windows.Forms.Label lblCokeAmount;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
@@ -770,6 +816,10 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem resetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
     }
 }
 

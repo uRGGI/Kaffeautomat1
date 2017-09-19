@@ -52,5 +52,11 @@ namespace Kaffeautomat
             return Sum - AmountPaid;
             
         }
+
+        public void ClearAll()
+        {
+            Change = 0;
+            AmountPaid = 0;
+        }
     }
 }
