@@ -37,6 +37,20 @@
             this.lblPay1 = new System.Windows.Forms.Label();
             this.lblPay50c = new System.Windows.Forms.Label();
             this.gbDrinks = new System.Windows.Forms.GroupBox();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btnRemoveCoke = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblPayAmount = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.lblTotalCost = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -56,21 +70,21 @@
             this.lblChange = new System.Windows.Forms.Label();
             this.lblPaid = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.lblPayAmount = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.lblCokeAmount = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.gbDrinks.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn10
@@ -169,7 +183,7 @@
             this.gbDrinks.Controls.Add(this.button5);
             this.gbDrinks.Controls.Add(this.button4);
             this.gbDrinks.Controls.Add(this.button3);
-            this.gbDrinks.Controls.Add(this.button2);
+            this.gbDrinks.Controls.Add(this.btnRemoveCoke);
             this.gbDrinks.Controls.Add(this.button1);
             this.gbDrinks.Controls.Add(this.lblPayAmount);
             this.gbDrinks.Controls.Add(this.label9);
@@ -194,6 +208,135 @@
             this.gbDrinks.TabIndex = 8;
             this.gbDrinks.TabStop = false;
             this.gbDrinks.Text = "Drycker";
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(205, 187);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(23, 23);
+            this.button12.TabIndex = 27;
+            this.button12.Text = "-";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(205, 158);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(23, 23);
+            this.button11.TabIndex = 26;
+            this.button11.Text = "-";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(205, 129);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(23, 23);
+            this.button10.TabIndex = 25;
+            this.button10.Text = "-";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(205, 71);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(23, 23);
+            this.button9.TabIndex = 24;
+            this.button9.Text = "-";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(205, 100);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(23, 23);
+            this.button8.TabIndex = 23;
+            this.button8.Text = "-";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(176, 187);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(23, 23);
+            this.button7.TabIndex = 22;
+            this.button7.Text = "+";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(176, 158);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(23, 23);
+            this.button6.TabIndex = 21;
+            this.button6.Text = "+";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(176, 129);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(23, 23);
+            this.button5.TabIndex = 20;
+            this.button5.Text = "+";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(176, 71);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(23, 23);
+            this.button4.TabIndex = 19;
+            this.button4.Text = "+";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(176, 100);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(23, 23);
+            this.button3.TabIndex = 18;
+            this.button3.Text = "+";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // btnRemoveCoke
+            // 
+            this.btnRemoveCoke.Location = new System.Drawing.Point(205, 42);
+            this.btnRemoveCoke.Name = "btnRemoveCoke";
+            this.btnRemoveCoke.Size = new System.Drawing.Size(23, 23);
+            this.btnRemoveCoke.TabIndex = 17;
+            this.btnRemoveCoke.Text = "-";
+            this.btnRemoveCoke.UseVisualStyleBackColor = true;
+            this.btnRemoveCoke.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(176, 42);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(23, 23);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "+";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // lblPayAmount
+            // 
+            this.lblPayAmount.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblPayAmount.ForeColor = System.Drawing.Color.Lime;
+            this.lblPayAmount.Location = new System.Drawing.Point(29, 316);
+            this.lblPayAmount.Name = "lblPayAmount";
+            this.lblPayAmount.Size = new System.Drawing.Size(170, 27);
+            this.lblPayAmount.TabIndex = 15;
+            this.lblPayAmount.Text = "0";
+            this.lblPayAmount.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(66, 284);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(88, 20);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Att betala";
             // 
             // lblTotalCost
             // 
@@ -401,140 +544,149 @@
             this.label10.TabIndex = 12;
             this.label10.Text = "Betalat:";
             // 
-            // label9
+            // groupBox1
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(66, 284);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(88, 20);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Att betala";
+            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Controls.Add(this.label21);
+            this.groupBox1.Controls.Add(this.label20);
+            this.groupBox1.Controls.Add(this.label19);
+            this.groupBox1.Controls.Add(this.label18);
+            this.groupBox1.Controls.Add(this.lblCokeAmount);
+            this.groupBox1.Controls.Add(this.label16);
+            this.groupBox1.Controls.Add(this.label15);
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(12, 303);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(181, 210);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Du köper:";
             // 
-            // lblPayAmount
+            // label11
             // 
-            this.lblPayAmount.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPayAmount.ForeColor = System.Drawing.Color.Lime;
-            this.lblPayAmount.Location = new System.Drawing.Point(29, 316);
-            this.lblPayAmount.Name = "lblPayAmount";
-            this.lblPayAmount.Size = new System.Drawing.Size(170, 27);
-            this.lblPayAmount.TabIndex = 15;
-            this.lblPayAmount.Text = "0";
-            this.lblPayAmount.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(5, 33);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(98, 19);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Coca Cola: ";
             // 
-            // button1
+            // label12
             // 
-            this.button1.Location = new System.Drawing.Point(176, 42);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(23, 23);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(5, 61);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(58, 19);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Fanta:";
             // 
-            // button2
+            // label13
             // 
-            this.button2.Location = new System.Drawing.Point(205, 42);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(23, 23);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "-";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(5, 87);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(64, 19);
+            this.label13.TabIndex = 2;
+            this.label13.Text = "Sprite: ";
             // 
-            // button3
+            // label14
             // 
-            this.button3.Location = new System.Drawing.Point(176, 100);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(23, 23);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "+";
-            this.button3.UseVisualStyleBackColor = true;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(5, 111);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(55, 19);
+            this.label14.TabIndex = 16;
+            this.label14.Text = "Kaffe:";
             // 
-            // button4
+            // label15
             // 
-            this.button4.Location = new System.Drawing.Point(176, 71);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(23, 23);
-            this.button4.TabIndex = 19;
-            this.button4.Text = "+";
-            this.button4.UseVisualStyleBackColor = true;
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(5, 139);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(56, 19);
+            this.label15.TabIndex = 16;
+            this.label15.Text = "Juice:";
             // 
-            // button5
+            // label16
             // 
-            this.button5.Location = new System.Drawing.Point(176, 129);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(23, 23);
-            this.button5.TabIndex = 20;
-            this.button5.Text = "+";
-            this.button5.UseVisualStyleBackColor = true;
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(5, 171);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(58, 19);
+            this.label16.TabIndex = 16;
+            this.label16.Text = "Fanta:";
             // 
-            // button6
+            // lblCokeAmount
             // 
-            this.button6.Location = new System.Drawing.Point(176, 158);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(23, 23);
-            this.button6.TabIndex = 21;
-            this.button6.Text = "+";
-            this.button6.UseVisualStyleBackColor = true;
+            this.lblCokeAmount.AutoSize = true;
+            this.lblCokeAmount.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblCokeAmount.Location = new System.Drawing.Point(102, 33);
+            this.lblCokeAmount.Name = "lblCokeAmount";
+            this.lblCokeAmount.Size = new System.Drawing.Size(18, 19);
+            this.lblCokeAmount.TabIndex = 17;
+            this.lblCokeAmount.Text = "0";
+            this.lblCokeAmount.Click += new System.EventHandler(this.lblCokeAmount_Click);
             // 
-            // button7
+            // label18
             // 
-            this.button7.Location = new System.Drawing.Point(176, 187);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(23, 23);
-            this.button7.TabIndex = 22;
-            this.button7.Text = "+";
-            this.button7.UseVisualStyleBackColor = true;
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label18.Location = new System.Drawing.Point(102, 61);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(18, 19);
+            this.label18.TabIndex = 18;
+            this.label18.Text = "0";
             // 
-            // button8
+            // label19
             // 
-            this.button8.Location = new System.Drawing.Point(205, 100);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(23, 23);
-            this.button8.TabIndex = 23;
-            this.button8.Text = "-";
-            this.button8.UseVisualStyleBackColor = true;
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label19.Location = new System.Drawing.Point(102, 87);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(18, 19);
+            this.label19.TabIndex = 18;
+            this.label19.Text = "0";
             // 
-            // button9
+            // label20
             // 
-            this.button9.Location = new System.Drawing.Point(205, 71);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(23, 23);
-            this.button9.TabIndex = 24;
-            this.button9.Text = "-";
-            this.button9.UseVisualStyleBackColor = true;
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label20.Location = new System.Drawing.Point(101, 111);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(18, 19);
+            this.label20.TabIndex = 19;
+            this.label20.Text = "0";
             // 
-            // button10
+            // label21
             // 
-            this.button10.Location = new System.Drawing.Point(205, 129);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(23, 23);
-            this.button10.TabIndex = 25;
-            this.button10.Text = "-";
-            this.button10.UseVisualStyleBackColor = true;
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label21.Location = new System.Drawing.Point(101, 139);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(18, 19);
+            this.label21.TabIndex = 20;
+            this.label21.Text = "0";
             // 
-            // button11
+            // label22
             // 
-            this.button11.Location = new System.Drawing.Point(205, 158);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(23, 23);
-            this.button11.TabIndex = 26;
-            this.button11.Text = "-";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(205, 187);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(23, 23);
-            this.button12.TabIndex = 27;
-            this.button12.Text = "-";
-            this.button12.UseVisualStyleBackColor = true;
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label22.Location = new System.Drawing.Point(101, 171);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(18, 19);
+            this.label22.TabIndex = 21;
+            this.label22.Text = "0";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(667, 588);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblPaid);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.lblChange);
@@ -554,6 +706,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gbDrinks.ResumeLayout(false);
             this.gbDrinks.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -601,8 +755,21 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRemoveCoke;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblCokeAmount;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
     }
 }
 

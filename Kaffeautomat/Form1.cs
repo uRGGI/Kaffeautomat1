@@ -45,6 +45,7 @@ namespace Kaffeautomat
         private void btnCoke_Click(object sender, EventArgs e)
         {
             drinkvendor.AddCoke();
+            lblCokeAmount.Text = drinkvendor.AmountOfDrink(DrinkType.Coke).ToString();
             AmountToPay();
             UpdateChange();
         }
@@ -119,6 +120,12 @@ namespace Kaffeautomat
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            drinkvendor.RemoveDrink(DrinkType.Coke);
+            lblCokeAmount.Text = drinkvendor.AmountOfDrink(DrinkType.Coke).ToString();
+        }
+
+        private void lblCokeAmount_Click(object sender, EventArgs e)
         {
             
         }

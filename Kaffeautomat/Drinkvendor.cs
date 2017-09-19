@@ -10,6 +10,32 @@ namespace Kaffeautomat
     {
         public static List<Drinks> drinklist = new List<Drinks>();
 
+        public void RemoveDrink(DrinkType drinktype)
+        {
+            foreach (var drink in drinklist)
+            {
+                if (drink.Drinktype.Equals(drinktype))
+                {
+                    drinklist.Remove(drink);
+                    break;
+                }
+            }
+        }
+
+        public int AmountOfDrink(DrinkType type)
+        {
+            int amount = 0;
+
+            foreach (var drink in drinklist)
+            {
+                if (drink.Drinktype == type)
+                {
+                    amount += 1;
+                }
+            }
+            return amount;
+        }
+
         public void AddCoke()
         {
             drinklist.Add(new Drinks(10, "Coca Cola", DrinkType.Coke));

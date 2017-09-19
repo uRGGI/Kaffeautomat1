@@ -9,8 +9,7 @@ namespace Kaffeautomat
     public class Payment
     {
         
-        private Drinkvendor drinkvendor = new Drinkvendor();
-
+        
         public decimal Sum
         {
             get
@@ -21,7 +20,7 @@ namespace Kaffeautomat
         }
         public decimal Change { get; set; }
         public decimal AmountPaid { get; set; }
-
+        
         public decimal SumOfDrinks()
         {
             decimal sum = 0;
