@@ -16,7 +16,9 @@ namespace Kaffeautomat
         private int countPaid5 = 0;
         private int countPaid1 = 0;
         private int countPaid50c = 0;
-        
+        Payment payment = new Payment();
+        Drinkvendor drinkvendor = new Drinkvendor();
+
         public Form1()
         {
             InitializeComponent();
@@ -29,55 +31,55 @@ namespace Kaffeautomat
 
         public void AmountToPay()
         {
-            lblTotalCost.Text = Payment.SumOfDrinks().ToString();
-            lblPayAmount.Text = Payment.AmountToPay().ToString();
+            lblTotalCost.Text = payment.SumOfDrinks().ToString();
+            lblPayAmount.Text = payment.AmountToPay().ToString();
         }
 
         public void UpdateChange()
         {
-            lblChange.Text = Payment.CalcChange().ToString();
-            lblPaid.Text = Payment.AmountPaid.ToString();
-            lblPayAmount.Text = Payment.AmountToPay().ToString();
+            lblChange.Text = payment.CalcChange().ToString();
+            lblPaid.Text = payment.AmountPaid.ToString();
+            lblPayAmount.Text = payment.AmountToPay().ToString();
         }
 
         private void btnCoke_Click(object sender, EventArgs e)
         {
-            AddDrinks.AddCola();
+            drinkvendor.AddCoke();
             AmountToPay();
             UpdateChange();
         }
 
         private void btnFanta_Click(object sender, EventArgs e)
         {
-            AddDrinks.AddFanta();
+            drinkvendor.AddFanta();
             AmountToPay();
             UpdateChange();
         }
 
         private void btnSprite_Click(object sender, EventArgs e)
         {
-            AddDrinks.AddSprite();
+            drinkvendor.AddSprite();
             AmountToPay();
             UpdateChange();
         }
 
         private void btnKaffe_Click(object sender, EventArgs e)
         {
-            AddDrinks.AddCoffe();
+            drinkvendor.AddKaffe();
             AmountToPay();
             UpdateChange();
         }
 
         private void btnJuice_Click(object sender, EventArgs e)
         {
-            AddDrinks.AddJuice();
+            drinkvendor.AddJuice();
             AmountToPay();
             UpdateChange();
         }
 
         private void btnVatten_Click(object sender, EventArgs e)
         {
-            AddDrinks.AddWater();
+            drinkvendor.AddVatten();
             AmountToPay();
             UpdateChange();
         }
@@ -85,7 +87,7 @@ namespace Kaffeautomat
         private void btn10_Click(object sender, EventArgs e)
         {
             
-            Payment.AmountPaid += 10;
+            payment.AmountPaid += 10;
             countPaid10++;
             lblPay10.Text = countPaid10.ToString();
             UpdateChange();
@@ -93,7 +95,7 @@ namespace Kaffeautomat
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            Payment.AmountPaid += 5;
+            payment.AmountPaid += 5;
             countPaid5++;
             lblPay5.Text = countPaid5.ToString();
             UpdateChange();
@@ -101,7 +103,7 @@ namespace Kaffeautomat
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            Payment.AmountPaid += 1;
+            payment.AmountPaid += 1;
             countPaid1++;
             lblPay1.Text = countPaid1.ToString();
             UpdateChange();
@@ -109,12 +111,16 @@ namespace Kaffeautomat
 
         private void btn50c_Click(object sender, EventArgs e)
         {
-            Payment.AmountPaid += .5;
+            payment.AmountPaid += .5m;
             countPaid50c++;
             lblPay50c.Text = countPaid50c.ToString();
             UpdateChange();
             
         }
-      
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

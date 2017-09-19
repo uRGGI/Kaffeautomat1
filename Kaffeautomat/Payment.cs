@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Kaffeautomat
 {
-    public static class Payment
+    public class Payment
     {
         
+        private Drinkvendor drinkvendor = new Drinkvendor();
 
-        public static double Sum
+        public decimal Sum
         {
             get
             {
@@ -18,13 +19,13 @@ namespace Kaffeautomat
                 
             }
         }
-        public static double Change { get; set; }
-        public static double AmountPaid { get; set; }
+        public decimal Change { get; set; }
+        public decimal AmountPaid { get; set; }
 
-        public static double SumOfDrinks()
+        public decimal SumOfDrinks()
         {
-            double sum = 0;
-            foreach (var drink in Drinks.drinklist)
+            decimal sum = 0;
+            foreach (var drink in Drinkvendor.drinklist)
             {
                 sum += drink.Price;
             }
@@ -32,7 +33,7 @@ namespace Kaffeautomat
             return sum;
         }
 
-        public static double CalcChange()
+        public decimal CalcChange()
         {
             Change = AmountPaid - Sum;
             if (Change < 0)
@@ -43,14 +44,13 @@ namespace Kaffeautomat
             return Change;
         }
 
-        public static double AmountToPay()
+        public decimal AmountToPay()
         {
             if (Sum - AmountPaid < 0)
             {
                 return 0;
             }
             return Sum - AmountPaid;
-            
             
         }
     }

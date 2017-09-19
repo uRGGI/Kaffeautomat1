@@ -8,49 +8,60 @@ namespace Kaffeautomat
 {
     public class Drinks : IDrink
     {
-        public static List<IDrink> drinklist = new List<IDrink>();
 
-        public double Price { get; set; }
+        public string Name { get; set; }
+        public decimal Price { get; set; }
+        public DrinkType Drinktype { get; set; }
 
         public Drinks()
         {
             
         }
 
-        public Drinks(int price)
+        public Drinks(int price, string name, DrinkType type)
         {
             this.Price = price;
+            this.Name = name;
+            this.Drinktype = type;
         }
     }
 
-    public class CocaCola : Drinks
+    /*public class CocaCola : Drinks
     {
-        public CocaCola(double price)
+        public CocaCola(decimal price, string name)
         {
+            Drinktype = DrinkType.Coke;
+            this.Name = name;
             this.Price = price;
         }
     }
 
     public class Fanta : Drinks
     {
-        public Fanta(double price)
+        public Fanta(decimal price, string name)
         {
+            Drinktype = DrinkType.Fanta;
+            this.Name = name;
             this.Price = price;
         }
     }
 
     public class Sprite : Drinks
     {
-        public Sprite(double price)
+        public Sprite(decimal price, string name)
         {
+            Drinktype = DrinkType.Sprite;
+            this.Name = name;
             this.Price = price;
         }
     }
 
     public class Kaffe : Drinks
     {
-        public Kaffe(double price)
+        public Kaffe(decimal price, string name)
         {
+            Drinktype = DrinkType.Kaffe;
+            this.Name = name;
             this.Price = price;
         }
 
@@ -58,18 +69,33 @@ namespace Kaffeautomat
 
     public class Vatten : Drinks
     {
-        public Vatten(double price)
+        public Vatten(decimal price, string name)
         {
+            this.Drinktype = DrinkType.Vatten;
+            this.Name = name;
             this.Price = price;
         }
     }
 
     public class Juice : Drinks
     {
-        public Juice(double price)
+        public Juice(decimal price, string name)
         {
+            this.Drinktype = DrinkType.Juice;
+            this.Name = name;
             this.Price = price;
         }
 
+    }
+    */
+
+    public enum DrinkType
+    {
+        Coke,
+        Fanta,
+        Sprite,
+        Kaffe,
+        Juice,
+        Vatten
     }
 }
